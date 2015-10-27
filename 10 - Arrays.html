@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        //An array can hold many values under a single name,
+        var cars = ['Audi', 'Ford', 'Toyota'];
+        // and you can access the values by referring to an index number.
+        cars[1]; //'Ford', because number of elements is started from 0
+        cars[0]; // 'Audi'
+
+        //you can also create an Array using syntax
+        //but avoid of using it. Example above works much faster.
+        var cars = new Array('Audi', 'Ford', 'Toyota');
+
+        //you can also use a named index, but the array will redefined to a standard object.
+        var cars = [];
+        cars['audi'] = 'R8';
+        //After that, all array methods and properties will produce incorrect results.
+        //typeof array is object
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        //Objects are variables too. But objects can contain many values.
+        //JavaScript object is container for named values
+        var car = {type: 'ford', model: 'fiesta', color: 'green'};
+        //you can get values using syntax objectName.propertyName;
+        car.color; // 'ford'
+        //or using syntax objectName['propertyName']
+        car['model']; // 'fiesta'
+        //Objects can also have functions as their values.
+        var car = {
+            type: 'ford',
+            model: 'fiesta',
+            color: 'green',
+            go: function () {
+                console.log(car.type + ' ' + car.model  +' start engine');
+            }};
+        // You can call functions using the same syntax as for values.
+        // objectName.functionName();
+        car.go();
+        //you can also call function without definition (). In that case, you can assign function to variable
+        var goCar = car.go;
+    </script>
+</head>
+<body>
+</body>
+</html>

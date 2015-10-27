@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example1</title>
+
+    <!--just add a script-->
+    <script>
+        function simpleExample() {
+            document.getElementById('test').innerHTML = Date();
+        }
+    </script>
+
+    <!--add script tag with path to javascript file-->
+    <script src="simpleExample.js"></script>
+</head>
+<body>
+    <button type="button", onclick="simpleExample()">Change Date</button>
+    <div id="test"></div>
+</body>
+</html>
